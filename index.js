@@ -11,16 +11,6 @@ let server = http.createServer(function(request, response){
 //     console.log('Server already running on port 3000!!!!')
 // })
 
-function pigLatin2(words) {
-    const vocalWord = ['a', 'i', 'u', 'e', ' o'];
-    // code here
-    const arr = words.split(' ');
-    return arr.map((word) => {
-        return word.match(/[aiueo]/i) ?
-            `${word.substr(1)}${word.substr(0,1)}ay` : word
-    }).join(' ');
-  }
-
 function pigLatin(words) {
   const vocalWord = ['a', 'i', 'u', 'e', ' o'];
   // code here
